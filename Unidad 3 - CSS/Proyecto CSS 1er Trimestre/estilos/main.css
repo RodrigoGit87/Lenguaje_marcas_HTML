@@ -1,0 +1,212 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#storm {
+    color: rgb(240, 0, 0)
+}
+
+.h1 {
+    font-family: 'Stack Sans Notch', sans-serif;
+    font-size: 70vh;
+    font-weight: bold;
+
+}
+
+.nav_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+}
+
+li {
+    font-family: 'Russo One', sans-serif;
+    list-style-type: none;
+    margin: 30px;
+}
+
+li:last-child {
+    margin: 0;
+}
+
+a {
+    color: #f37070;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f37070;
+}
+
+.seccion_home {
+    text-align: center;
+    background-image: url(../assets/Ducati_background.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion_home h1 {
+    font-family: 'Stack Sans Notch', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+    text-shadow: black 2px 3px;
+}
+
+.seccion_home p {
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    color: #f37070;
+    margin: 20px 0;
+    text-shadow: black 1px 3px;
+}
+
+.boton_join {
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    background-color: rgb(240, 0, 0);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(240, 0, 0, 0.4);
+}
+
+.boton_join:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(240, 0, 0, 0.6);
+}
+
+
+.linea_roja {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(240, 0, 0);
+}
+
+
+/* Tarjetas*/
+.tarjetas {
+    display: inline-block;
+    width: 23%;
+    height: 460px;
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 115px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: crimson 2px 2px 40px;
+    transition: all 0.4s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.tarjetas::after { /*Efecto 'overlay' */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+}
+
+.tarjetas:hover { /*Efecto 'hover' */
+    transform: translateY(-10px);
+    box-shadow: crimson 4px 4px 60px;
+}
+
+.tarjetas:hover::after {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+}
+
+.tarjeta_contenido {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px 30px 40px 30px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.tarjeta_contenido h2 {
+    font-family: 'Stack Sans Notch', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 15px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta_contenido p {
+    font-family: 'Russo One', sans-serif;
+    font-size: 14px;
+    color: #f0f0f0;
+    margin: 0 0 25px 0;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/*Botones de tarjetas*/
+.btn_tarjeta {
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    background-color: rgb(240, 0, 0);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    align-self: flex-start;
+    box-shadow: 0 4px 15px rgba(240, 0, 0, 0.4);
+}
+
+.btn_tarjeta:hover {
+    background-color: #f37070;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(240, 0, 0, 0.6);
+}
+
+
+#tarjeta_noticias {
+    background-image: url('../assets/imagen_noticias.png');
+}
+
+#tarjeta_historia {
+    background-image: url('../assets/giacomo_agostini.jpg');
+}
+
+#tarjeta_galeria {
+    background-image: url('../assets/imagen_galeria.jpg');
+}

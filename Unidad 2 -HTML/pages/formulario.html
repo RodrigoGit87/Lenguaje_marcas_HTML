@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario web Isa Handmade Jewels</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 20px; color: #5a2c7a;"> Crea tu Joya Personal: Formulario de encargo</h1><!--Encabezado y breve intro del formulario-->
+    <p style="font-size: 18px; font-style: oblique; margin-bottom: 15;">¡Es tu momento de diseñar! Rellena este formulario con tus ideas y datos de contacto. Cuantos más detalles nos proporciones, 
+        mejor podremos entender tu visión y dar vida a la joya perfecta para ti.</p>
+<!--Formulario-->
+<form   action="www.servidordegerman.es" method="post">
+        <!--Campo para el usuario-->
+        <fieldset style="display: inline-block; width: auto; height: auto;">
+            <!--Etiqueta legend-->
+            <legend style="font-size: 1.6; font-weight: bold; padding: 10px; color: #5a2c7a;"> Datos de Contacto</legend>
+                <!--usuario-->
+                <label for="usuario" style="display: block; margin-bottom: 6px;">Nombre Completo</label>
+                <input type="text" id="nombre_cliente" name="usuario" minlength="6" maxlength="69" required>
+                <hr>
+                <!--Email-->
+                <label for="email_cliente" style="display: block; margin-bottom: 6px;">Correo Electrónico</label>
+                <input type="email" id="email_cliente" name="email_cliente" minlength="6" maxlength="69" placeholder="ejemplo@gmail.com" required>
+                <hr>
+                <!--Contraseña-->
+                <label for="password" style="display: block; margin-bottom: 6px;">Crea una contraseña para tu pedido</label>
+                <input type="password" id="contraseña" name="contraseña" minlength="6" maxlength="18" required><br>
+                <!--Breve recordatorio-->
+                <small style="color: #666; display: block; margin-top: +5px; margin-bottom: 15px;">Mínimo 8 caracteres. Guárdala bien.</small>
+        </fieldset><p>                                                                                                                         </p>
+        <!--Campo para el diseño de joya-->
+        <fieldset style="display: inline-block; width: auto; height: auto;">
+            <legend style="font-size: 1.6; font-weight: bold; padding: 10px; color: #5a2c7a;"> Tu Joya Personal</legend>
+                <label for="nombre_joya" style="display: block; margin-bottom: 6px;">Nombre de tu joya</label>
+                <input type="text" id="nombre_joya" name="nombre_joya" minlength="3" maxlength="50" placeholder="Ej: Anillo 'Florecer', Colgante 'Estrella Guía'" required>
+                <!--Dropdown Select-->
+                <p>                                       
+                <label for="tipo_joya" style=" display: block; margin-bottom: 6px;"> Tipo de Joya</label>
+                <select id="tipo_joya" name="tipo_joya" required>
+                    <option value="">-- Selecciona un tipo --</option> 
+                    <option value="anillo">Anillo</option>
+                    <option value="pulsera">Pulsera</option>
+                    <option value="collar">Collar</option>
+                    <option value="pendientes">Pendientes</option>
+                    <option value="otro">Otro</option>
+                </select> </p>
+                <!--Textarea-->
+                <p><label for="materiales">Indica los materiales que utilizaremos para la creacion de tu joya personal </label><br>
+                <textarea id="materiales" name="materiales" rows="6" cols="60" placeholder="Ej: Plata de ley con amatista, Oro rosa con diamante pequeño, Bronce con cuentas de río..."></textarea></p>
+                <!--Botones Radio-->
+                <div class="nivel_detalle">
+                    <label for="nivel_detalle">Nivel de detalle deseado:</label><br>
+                    <input type="radio" id="boton_sencillo" name="nivel_detalle" value="Sencillo">Detalle sencillo y minimalista<br>
+                    <input type="radio" id="boton_intermedio" name="nivel_detalle" value="Intermedio"> Nivel intermedio<br>
+                    <input type="radio" id="boton_complejo" name="nivel_detalle" value="Complejo"> Detalles elaborados y complejos
+                </div><br>
+                <!--Subir video-->
+                <label for="nombre_joya" style="display: block; margin-bottom: 6px; color: #696969;">Sube un video de tu inspiracion o un boceto animado</label>
+                <input type="file"id="video_file" style="display: block;"  accept="video/*">
+        </fieldset>
+    <button type="submit" id="boton_solicitud" style="color:antiquewhite; margin-top: 25px; background-color: #763d8d; padding: 12 25; border: none; font-weight: bold; font-size: 1.3em;
+    display: block; width: 26.5%;">Enviar Solicitud de Encargo</button><br>
+    <a href="../main.html" style="margin-left: 50%;">Volver a Inicio</a>
+</form>
+</body>
+</html>

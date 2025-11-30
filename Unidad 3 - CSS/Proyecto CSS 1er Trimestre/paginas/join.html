@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/join.css">
+    <title>Forma parte de una comunidad unida por la pasión por las dos ruedas.</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset><!--Datos de usuario-->
+            <legend>Información básica</legend>
+            <div class="campo_basico">
+                <div class="campo_fila">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="campo_fila">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                </div>
+                <div class="campo_fila">
+                    <label for="apodo">Nickname</label>
+                    <input type="text" id="apodo" name="apodo" required>
+                </div> 
+            </div>
+        </fieldset>
+        <fieldset class="campo1"><!--Datos personales-->
+            <legend> Datos personales</legend>
+            <label> Nombre completo</label>
+            <input type="text" id="nombre_completo" minlength="10" placeholder="Introduce tu nombre completo">
+            <label> Fecha de nacimiento</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            <div class="genero_fila">
+                <label>Género</label>
+                <input type="radio" id="hombre" name="genero" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="genero" value="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dinos algo sobre ti </legend>
+            <textarea name="sobreti" id="sobreti" rows="4" cols="70" placeholder="Mi moto favorita es..."></textarea>
+        </fieldset>
+        <legend>Dinos cuál es tu estilo de montura ! </legend>
+        <select name="estilo_motos" id="estilo_motos">
+        <option value="undefined">No Definido</option>
+        <option value="Custom">Choppers !</option>
+        <option value="Street">Nakeds</option>
+        <option value="Sport">Sport RR</option>
+        <option value="Road">Road / Touring</option>
+        <option value="Scooter">Scooters</option>
+    </select><br>
+    <button id="enviar_formulario" type="submit">Enviar Formulario</button>
+    </form>
+</body>
+
+</html>
