@@ -1,6 +1,6 @@
 # Lenguaje de Marcas
 
-
+![Lenguaje de Marcas Banner](assets/images/banner_lenguaje_marcas.png)
 Repositorio de prácticas, ejercicios y proyectos para la asignatura de **Lenguaje de Marcas** del ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM).
 
 ## 🎯 Objetivo
