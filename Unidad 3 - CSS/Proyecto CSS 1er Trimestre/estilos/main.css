@@ -2,8 +2,10 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    display: grid;/*Mantener el footer fijo sin importar el contenido*/
-    grid-template-rows: auto 1fr auto;/*Visto en instagram :P */
+    display: grid;
+    /*Mantener el footer fijo sin importar el contenido*/
+    grid-template-rows: auto 1fr auto;
+    /*Visto en instagram :P */
 
 }
 
@@ -100,7 +102,8 @@ a:visited {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(240, 0, 0, 0.6);
     text-decoration: none;
-    color: #fafafa;/*cambia el color del texto al pasar el raton*/
+    color: #fafafa;
+    /*cambia el color del texto al pasar el raton*/
 }
 
 
@@ -219,8 +222,9 @@ a:visited {
     /*efecto de sombra detras del boton*/
 }
 
-.btn_tarjeta a{
-    text-decoration: none;/*quia el subrallado del enlace*/
+.btn_tarjeta a {
+    text-decoration: none;
+    /*quia el subrallado del enlace*/
     color: white;
 }
 
@@ -252,4 +256,33 @@ a:visited {
     align-items: center;
     padding-top: 30px;
     color: rgb(255, 216, 216);
+}
+.contenedor_foot {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.github {
+    background-image: url('../assets/svg/github.svg');
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.instagram {
+    background-image: url('../assets/svg/instagram.svg');
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
 }
